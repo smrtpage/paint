@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" name="color" id="color">
+            <input type="button" value="Fill in" id="fill" class="fill btn">
+            <input type="button" value="Clear" id="clear" class="clear btn">
+
+        </div>
+        <div class="lineWeightBar">
+            <input type="range" min="1" max="100" step="1" id="lineW" class="lineW">
+            <span class="lineValue" id="lineValue">50</span>
+        </div>
+    </div>
+    <canvas class="canvas" id="canvas"></canvas>
+    <div id="status">By Smart Page</div>
+</body>
+</html>
